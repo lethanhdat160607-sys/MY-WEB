@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bình Mỹ Moon River Resort - Chạm vào thiên nhiên, tìm lại sự cân bằng.">
+  <meta name="theme-color" content="#2F5D3A">
+  <title>Bình Mỹ Moon River Resort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">Bình Mỹ Moon River Resort · Natural Luxury · Riverside Wellness</div>
+
+  <header class="header" id="header">
+    <a class="logo" href="#home">Bình Mỹ <span>Moon River</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Trang chủ</a>
+      <a href="#about">Về chúng tôi</a>
+      <a href="#experiences">Trải nghiệm</a>
+      <a href="#wellness">Wellness</a>
+      <a href="#food">Ẩm thực</a>
+      <a href="#booking">Đặt trải nghiệm</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="btn btn-primary header-booking" data-scroll="#booking">Đặt ngay</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">RIVERSIDE · WELLNESS · ECO EXPERIENCE</p>
+        <h1>Chạm vào thiên nhiên.<br><em>Tìm lại sự cân bằng.</em></h1>
+        <p class="hero-text">Một điểm nghỉ dưỡng ven sông nơi bạn có thể sống chậm, thư giãn và kết nối với thiên nhiên Bình Mỹ.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scroll="#booking">Đặt trải nghiệm</button>
+          <button class="btn btn-light" data-scroll="#experiences">Khám phá resort</button>
+        </div>
+      </div>
+      <div class="hero-scroll">↓ Cuộn để khám phá</div>
+    </section>
+
+    <section class="booking-strip">
+      <div>
+        <span>Ngày</span>
+        <input id="quickDate" type="date">
+      </div>
+      <div>
+        <span>Giờ</span>
+        <select id="quickTime">
+          <option>08:00</option><option>09:00</option><option>10:00</option>
+          <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+        </select>
+      </div>
+      <div>
+        <span>Số khách</span>
+        <input id="quickGuests" type="number" min="1" max="20" value="2">
+      </div>
+      <div>
+        <span>Trải nghiệm</span>
+        <select id="quickExperience">
+          <option>Day Pass</option><option>Wellness</option><option>Thiền</option>
+          <option>Vườn & nông trại</option><option>Ẩm thực</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" data-scroll="#booking">Kiểm tra & đặt</button>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-image placeholder-image" data-label="images/resort.jpg"></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">BÌNH MỸ MOON RIVER</p>
+        <h2>Một khoảng xanh để<br><em>thở chậm lại</em></h2>
+        <p>Giữa nhịp sống hiện đại, Bình Mỹ Moon River Resort mang đến một không gian gần gũi với sông nước, cây xanh, vườn cây và đời sống nông nghiệp.</p>
+        <p>Từ những buổi thiền yên tĩnh đến trải nghiệm nông trại và ẩm thực địa phương, mỗi hoạt động được thiết kế để bạn tận hưởng một ngày thật chậm.</p>
+        <a class="text-link" href="#experiences">Khám phá câu chuyện của chúng tôi →</a>
+      </div>
+    </section>
+
+    <section class="section soft-bg" id="experiences">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EXPERIENCES</p>
+        <h2>Những trải nghiệm <em>đáng nhớ</em></h2>
+        <p>Tự chọn nhịp điệu cho ngày của bạn.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="experience-card reveal">
+          <div class="card-image placeholder-image" data-label="images/river.jpg"></div>
+          <div class="card-body"><span>01</span><h3>Riverside Escape</h3><p>Thư giãn bên dòng sông, tận hưởng không gian xanh và nhịp sống nhẹ nhàng.</p><a href="#booking">Khám phá →</a></div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="card-image placeholder-image" data-label="images/meditation.jpg"></div>
+          <div class="card-body"><span>02</span><h3>Thiền & Mindfulness</h3><p>Không gian yên tĩnh cho thiền, hít thở và kết nối với chính mình.</p><a href="#booking">Khám phá →</a></div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="card-image placeholder-image" data-label="images/garden.jpg"></div>
+          <div class="card-body"><span>03</span><h3>Garden Life</h3><p>Đi dạo giữa vườn cây, tìm hiểu nông nghiệp và tận hưởng màu xanh tự nhiên.</p><a href="#booking">Khám phá →</a></div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="card-image placeholder-image" data-label="images/farm.jpg"></div>
+          <div class="card-body"><span>04</span><h3>Farm & Cow Experience</h3><p>Trải nghiệm đời sống nông trại thân thiện, phù hợp cho gia đình và trẻ em.</p><a href="#booking">Khám phá →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wellness-banner" id="wellness">
+      <div class="wellness-overlay"></div>
+      <div class="wellness-content reveal">
+        <p class="eyebrow">WELLNESS</p>
+        <h2>Chăm sóc cơ thể.<br><em>Nuôi dưỡng tinh thần.</em></h2>
+        <p>Các trải nghiệm wellness tập trung vào thư giãn, phục hồi và chăm sóc sức khỏe tổng thể.</p>
+        <div class="pill-list"><span>Massage thư giãn</span><span>Chăm sóc cơ xương khớp</span><span>Thiền</span><span>Hít thở</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="food">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LOCAL CUISINE</p>
+        <h2>Ẩm thực từ <em>vườn đến bàn</em></h2>
+        <p>Hương vị gần gũi với thiên nhiên và nguyên liệu địa phương.</p>
+      </div>
+      <div class="food-grid">
+        <div class="food-feature placeholder-image" data-label="images/food.jpg"></div>
+        <div class="food-copy">
+          <h3>Bữa ăn chậm</h3>
+          <p>Không cần vội. Hãy dành thời gian thưởng thức một bữa ăn trong không gian xanh, cùng gia đình và bạn bè.</p>
+          <ul class="check-list">
+            <li>Nguyên liệu địa phương</li>
+            <li>Thực đơn theo mùa</li>
+            <li>Không gian sân vườn</li>
+            <li>Combo gia đình & nhóm bạn</li>
+          </ul>
+          <button class="btn btn-outline" data-scroll="#booking">Xem trải nghiệm ẩm thực</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-bg" id="booking">
+      <div class="section-heading reveal">
+        <p class="eyebrow">BOOK YOUR EXPERIENCE</p>
+        <h2>Đặt một ngày <em>thật chậm</em></h2>
+        <p>Điền thông tin bên dưới. Đây là bản demo front-end, dữ liệu được lưu trên trình duyệt.</p>
+      </div>
+      <form class="booking-form reveal" id="bookingForm">
+        <div class="form-group"><label for="name">Họ và tên</label><input id="name" required placeholder="Nguyễn Văn A"></div>
+        <div class="form-group"><label for="email">Email</label><input id="email" type="email" required placeholder="you@email.com"></div>
+        <div class="form-group"><label for="phone">Số điện thoại</label><input id="phone" required placeholder="09xxxxxxxx"></div>
+        <div class="form-group"><label for="date">Ngày trải nghiệm</label><input id="date" type="date" required></div>
+        <div class="form-group"><label for="time">Thời gian</label><select id="time"><option>08:00</option><option>09:00</option><option>10:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></div>
+        <div class="form-group"><label for="guests">Số khách</label><input id="guests" type="number" min="1" max="20" value="2"></div>
+        <div class="form-group"><label for="experience">Loại trải nghiệm</label><select id="experience"><option>Day Pass</option><option>Wellness</option><option>Thiền & Mindfulness</option><option>Vườn & Nông trại</option><option>Ẩm thực</option><option>Combo gia đình</option></select></div>
+        <div class="form-group"><label for="staff">Nhân viên hỗ trợ</label><select id="staff"><option>Nguyễn Minh Anh — Guest Experience Manager</option><option>Trần Hoàng Nam — Guest Experience Officer</option><option>Lê Ngọc Mai — Wellness Coordinator</option><option>Phạm Gia Huy — Activity Coordinator</option></select></div>
+        <div class="form-group full"><label for="notes">Ghi chú</label><textarea id="notes" rows="4" placeholder="Yêu cầu đặc biệt..."></textarea></div>
+        <div class="form-submit full"><button class="btn btn-primary" type="submit">Xác nhận đặt trải nghiệm</button><small>Trạng thái sau khi gửi: Chờ xác nhận</small></div>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal"><p class="eyebrow">OUR PEOPLE</p><h2>Đội ngũ <em>đón tiếp</em></h2></div>
+      <div class="staff-grid">
+        <article><div class="avatar">MA</div><h3>Nguyễn Minh Anh</h3><p>Guest Experience Manager</p></article>
+        <article><div class="avatar">TN</div><h3>Trần Hoàng Nam</h3><p>Guest Experience Officer</p></article>
+        <article><div class="avatar">LM</div><h3>Lê Ngọc Mai</h3><p>Wellness Coordinator</p></article>
+        <article><div class="avatar">PH</div><h3>Phạm Gia Huy</h3><p>Activity Coordinator</p></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="reveal"><p class="eyebrow">SLOW DOWN</p><h2>Bạn đã sẵn sàng cho<br><em>một ngày thật chậm?</em></h2><p>Rời xa nhịp sống thành phố. Trở về với thiên nhiên. Tìm lại sự cân bằng.</p><button class="btn btn-light" data-scroll="#booking">Bắt đầu hành trình</button></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-grid">
+        <div><p class="eyebrow">CONTACT</p><h2>Hẹn gặp bạn<br><em>bên dòng sông</em></h2><p>Địa chỉ: Bình Mỹ, Củ Chi, TP. Hồ Chí Minh</p><p>Hotline: 09xx xxx xxx</p><p>Email: hello@binhmymoonriver.vn</p></div>
+        <div class="map-placeholder"><span>MAP PLACEHOLDER</span><small>Thay bằng Google Maps / bản đồ thực tế sau</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="logo" href="#home">Bình Mỹ <span>Moon River</span></a><p>Chạm vào thiên nhiên – Tìm lại sự cân bằng.</p></div>
+    <div><h4>Khám phá</h4><a href="#experiences">Trải nghiệm</a><a href="#wellness">Wellness</a><a href="#food">Ẩm thực</a></div>
+    <div><h4>Hỗ trợ</h4><a href="#booking">Đặt trải nghiệm</a><a href="#contact">Liên hệ</a></div>
+    <div><h4>Social</h4><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+  </footer>
+  <div class="copyright">© 2026 Bình Mỹ Moon River Resort. Front-end demo.</div>
+
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <p class="eyebrow">BOOKING RECEIVED</p>
+      <h2>Đặt trải nghiệm thành công</h2>
+      <p>Mã đặt chỗ của bạn:</p>
+      <strong id="bookingCode">BMR-2026-0000</strong>
+      <div id="bookingSummary"></div>
+      <button class="btn btn-primary" id="printBooking">In phiếu</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
