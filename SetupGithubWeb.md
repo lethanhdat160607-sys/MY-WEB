@@ -2,7 +2,7 @@
 Project: ví dụ ~/Documents/binh-my-moon-river
 
 #bạn phải đang ở trong thư mục 
-`cd ~/Documents/binh-my-moon-river
+cd ~/Documents/binh-my-moon-river
 
 #kiểm tra file : ls 
 
